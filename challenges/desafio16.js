@@ -1,8 +1,8 @@
 db.produtos.updateMany(
   { nome: "Big Mac" },
-  { $set: { ultimaModificacao: Date() } }
+  { $set: { ultimaModificacao: Date() } },
 );
 db.produtos.find(
   { ultimaModificacao: { $exists: true } },
-  { nome: 1, _id: 0 }
+  { nome: 1, _id: 0 },
 );
